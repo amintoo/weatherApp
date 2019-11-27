@@ -1,0 +1,13 @@
+<div class="container">
+
+  <h1>Authentification</h1>
+  <div>
+    Login : <input type="text" name="username" class="form-control" required minlength="4" appForbiddenName="bob"
+                   [(ngModel)]="username"> <br /> <br />
+    Password : <input type="password" name="password" class="form-control" required minlength="4" appForbiddenName="bob"
+                      [(ngModel)]="password"> <br />
+  </div> <br />
+  <button (click)=checkLogin() class="btn btn-success">Se connecter</button>
+
+
+</div>
